@@ -32,9 +32,8 @@ namespace BankAccountTests
 
             // Act
             account.Debit(0);      
-
-            // Assert
             
+            // Assert - implied by 'ExpectedException' attribute
         }
     }
 }
