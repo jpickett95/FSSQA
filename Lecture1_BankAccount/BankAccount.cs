@@ -23,6 +23,8 @@ namespace Lecture1_BankAccount
         // Methods
         public void Debit(float debitAmount)  // takes in a debit amount and subtracts from 'balance' 
         {
+            if(debitAmount <= 0) throw new ArgumentOutOfRangeException(nameof(debitAmount));
+
             balance -= debitAmount;
         }
     }
